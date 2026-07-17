@@ -8,10 +8,14 @@
 // No es necesario tocar ningún componente de React.
 // -----------------------------------------------------------------------------
 import logoUrl from "../assets/logo.svg";
+import logoRoundUrl from "../assets/logo-round.svg";
 export const company = {
   name: "Macakes",
   slogan: "Endulzamos momentos especiales.",
   logo: logoUrl,
+  // Versión monocromática/sin fondo, pensada para usarse en formato
+  // circular (footer, favicon de redes, etc.)
+  logoRound: logoRoundUrl,
 
   seo: {
     title: "Macakes | Pastelería artesanal en Resistencia",
