@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MessageCircle, Phone, Copy, Check, Camera, MapPin } from "lucide-react";
+import {
+  MessageCircle,
+  Phone,
+  Copy,
+  Check,
+  Camera,
+  MapPin,
+} from "lucide-react";
 import company from "../../config/companyConfig";
 import Button from "../shared/Button";
 import ContactCard from "./ContactCard";
@@ -21,7 +28,7 @@ export default function ContactSection() {
 
   return (
     <section
-      className="px-6 py-20 sm:py-24"
+      className="px-6 pb-20 pt-10 sm:pb-24 sm:pt-14"
       aria-labelledby="contact-title"
     >
       <motion.h2
@@ -41,12 +48,20 @@ export default function ContactSection() {
           title="WhatsApp"
           description="Consultas, pedidos y presupuestos."
         >
-          <Button href={company.contact.whatsapp.url} icon={MessageCircle} className="mt-1">
+          <Button
+            href={company.contact.whatsapp.url}
+            icon={MessageCircle}
+            className="mt-1"
+          >
             {company.contact.whatsapp.label}
           </Button>
         </ContactCard>
 
-        <ContactCard icon={Phone} title="Teléfono" description={company.contact.phone.display}>
+        <ContactCard
+          icon={Phone}
+          title="Teléfono"
+          description={company.contact.phone.display}
+        >
           <button
             onClick={handleCopyPhone}
             className="mt-1 inline-flex items-center gap-2 rounded-full border-2 border-rose-primary bg-white px-6 py-3.5 font-display text-[15px] font-semibold text-bordeaux transition-colors hover:bg-rose-pale"
@@ -68,7 +83,11 @@ export default function ContactSection() {
           title="Instagram"
           description={company.contact.instagram.handle}
         >
-          <Button href={company.contact.instagram.url} icon={Camera} className="mt-1">
+          <Button
+            href={company.contact.instagram.url}
+            icon={Camera}
+            className="mt-1"
+          >
             {company.contact.instagram.label}
           </Button>
         </ContactCard>
@@ -78,7 +97,11 @@ export default function ContactSection() {
           title="Ubicación"
           description={company.contact.maps.address}
         >
-          <Button href={company.contact.maps.url} icon={MapPin} className="mt-1">
+          <Button
+            href={company.contact.maps.url}
+            icon={MapPin}
+            className="mt-1"
+          >
             {company.contact.maps.label}
           </Button>
         </ContactCard>

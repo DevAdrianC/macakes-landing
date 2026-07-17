@@ -7,7 +7,7 @@ export default function Footer() {
       <img
         src={company.logo}
         alt={`Logo de ${company.name}`}
-        className="mx-auto h-16 w-auto brightness-0 invert opacity-90"
+        className="mx-auto h-14 w-auto rounded-2xl bg-white/95 px-5 py-3 shadow-softer"
       />
 
       <nav
