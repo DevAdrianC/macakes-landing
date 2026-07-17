@@ -7,11 +7,11 @@
 // los valores de este archivo (y el logo en src/assets/logo.svg).
 // No es necesario tocar ningún componente de React.
 // -----------------------------------------------------------------------------
-
+import logoUrl from "../assets/logo.svg";
 export const company = {
   name: "Macakes",
   slogan: "Endulzamos momentos especiales.",
-  logo: "/src/assets/logo.svg",
+  logo: logoUrl,
 
   seo: {
     title: "Macakes | Pastelería artesanal en Resistencia",
