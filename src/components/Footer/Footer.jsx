@@ -4,7 +4,7 @@ import company from "../../config/companyConfig";
 export default function Footer() {
   return (
     <footer className="bg-bordeaux px-6 py-14 text-center text-white">
-      <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 shadow-softer sm:h-28 sm:w-28">
+      <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white p-2 shadow-softer sm:h-28 sm:w-28">
         <img
           src={company.logoRound}
           alt={`Logo de ${company.name}`}
