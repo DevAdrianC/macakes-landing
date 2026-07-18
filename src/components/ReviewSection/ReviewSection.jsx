@@ -6,6 +6,7 @@ import Button from "../shared/Button";
 export default function ReviewSection() {
   return (
     <section
+      id="reviews"
       className="relative bg-cream px-6 pb-8 pt-0 sm:pb-10"
       aria-labelledby="reviews-title"
     >

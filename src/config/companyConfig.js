@@ -7,8 +7,11 @@
 // los valores de este archivo (y el logo en src/assets/logo.svg).
 // No es necesario tocar ningún componente de React.
 // -----------------------------------------------------------------------------
+
 import logoUrl from "../assets/logo.svg";
 import logoRoundUrl from "../assets/logo-round.svg";
+import developerLogoUrl from "../assets/yaguaretech-isotipo.png";
+
 export const company = {
   name: "Macakes",
   slogan: "Endulzamos momentos especiales.",
@@ -44,6 +47,20 @@ export const company = {
     footerMessage: "Gracias por acompañarnos en la Pinky Experiencia 💗",
   },
 
+  // Botón "Descubrí nuestro menú" del Hero — abre el PDF en una pestaña nueva.
+  menu: {
+    url: "/menu/macakes-menu.pdf",
+    label: "Descubrí nuestro menú",
+  },
+
+  // Firma de desarrollo en el footer. Opacidad y tamaño se controlan desde
+  // el componente (Footer.jsx), acá solo va el contenido.
+  developer: {
+    name: "Yaguaretech",
+    logo: developerLogoUrl,
+    credit: "Design & Development by",
+  },
+
   reviews: {
     title: "¿Disfrutaste la experiencia?",
     text: "Tu opinión nos ayuda a seguir creciendo y permite que más personas conozcan Macakes.",
@@ -72,12 +89,45 @@ export const company = {
     },
   },
 
+  // Contenido de ejemplo (placeholder) hasta contar con los textos
+  // definitivos del cliente — reemplazar "description" y "reservation"
+  // sin tocar componentes.
   services: [
-    { icon: "coffee", label: "Cafecito y Pastelería" },
-    { icon: "cake-slice", label: "Mesas Dulces" },
-    { icon: "party-popper", label: "Eventos" },
-    { icon: "flask-conical", label: "Macakes Lab" },
-    { icon: "chef-hat", label: "Talleres" },
+    {
+      icon: "coffee",
+      label: "Cafecito y Pastelería",
+      description:
+        "Disfrutá de una experiencia dulce con café de especialidad y una selección de productos artesanales.",
+      reservation: "No requiere reserva.",
+    },
+    {
+      icon: "cake-slice",
+      label: "Mesas Dulces",
+      description:
+        "Diseñamos mesas personalizadas para cumpleaños, casamientos y eventos especiales.",
+      reservation: "15 días de anticipación.",
+    },
+    {
+      icon: "party-popper",
+      label: "Eventos",
+      description:
+        "Servicio integral de pastelería para celebraciones sociales y corporativas.",
+      reservation: "20 días de anticipación.",
+    },
+    {
+      icon: "flask-conical",
+      label: "Macakes Lab",
+      description:
+        "Espacio creativo donde nacen nuevas recetas, experiencias y productos exclusivos.",
+      reservation: "Consultar disponibilidad.",
+    },
+    {
+      icon: "chef-hat",
+      label: "Talleres",
+      description:
+        "Cursos y experiencias para aprender el mundo de la pastelería artesanal.",
+      reservation: "Según calendario.",
+    },
   ],
 };
 

@@ -4,7 +4,7 @@ import company from "../../config/companyConfig";
 export default function Footer() {
   return (
     <footer className="bg-bordeaux px-6 py-14 text-center text-white">
-      <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white p-2 shadow-softer sm:h-28 sm:w-28">
+      <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 shadow-softer sm:h-28 sm:w-28">
         <img
           src={company.logoRound}
           alt={`Logo de ${company.name}`}
@@ -54,6 +54,19 @@ export default function Footer() {
       <p className="mt-6 font-body text-xs text-white/50">
         © {new Date().getFullYear()} {company.name}
       </p>
+
+      <div className="mt-5 flex items-center justify-center gap-2 opacity-60">
+        <img
+          src={company.developer.logo}
+          alt=""
+          aria-hidden="true"
+          className="h-6 w-6 object-contain sm:h-7 sm:w-7"
+        />
+        <p className="font-body text-[11px] text-white/70 sm:text-xs">
+          {company.developer.credit}{" "}
+          <span className="font-medium">{company.developer.name}</span>
+        </p>
+      </div>
     </footer>
   );
 }
