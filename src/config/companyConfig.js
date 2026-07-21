@@ -59,6 +59,7 @@ export const company = {
     name: "Yaguaretech",
     logo: developerLogoUrl,
     credit: "Design & Development by",
+    url: "https://yaguaretech.net/",
   },
 
   reviews: {
@@ -97,7 +98,7 @@ export const company = {
       icon: "coffee",
       label: "Cafecito y Pastelería",
       description:
-        "Disfrutá de una experiencia dulce con café de especialidad y una selección de productos artesanales.",
+        "Disfruta de una experiencia única con nuestros productos hechos con amor, servidos con café. ",
       reservation: "No requiere reserva.",
     },
     {
@@ -105,7 +106,7 @@ export const company = {
       label: "Mesas Dulces",
       description:
         "Diseñamos mesas personalizadas para cumpleaños, casamientos y eventos especiales.",
-      reservation: "15 días de anticipación.",
+      reservation: "10 días de anticipación.",
     },
     {
       icon: "party-popper",
@@ -118,15 +119,23 @@ export const company = {
       icon: "flask-conical",
       label: "Macakes Lab",
       description:
-        "Espacio creativo donde nacen nuevas recetas, experiencias y productos exclusivos.",
+        "Café creativo donde podes disfrutar cosas ricas y realizar actividades artísticas al mismo tiempo!",
       reservation: "Consultar disponibilidad.",
     },
     {
       icon: "chef-hat",
       label: "Talleres",
       description:
-        "Cursos y experiencias para aprender el mundo de la pastelería artesanal.",
+        "Capacitaciones para niños y adultos en nuestro pinky espacio.",
       reservation: "Según calendario.",
+    },
+    {
+      icon: "truck",
+      label: "Macakes sobre ruedas",
+      badge: "Coming Soon",
+      description:
+        "Pinky camioncito interactivo llega a tu cumple a domicilio para disfrutar y divertirte.",
+      reservation: "Muy pronto disponible.",
     },
   ],
 };

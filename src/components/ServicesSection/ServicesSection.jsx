@@ -6,6 +6,7 @@ import {
   PartyPopper,
   FlaskConical,
   ChefHat,
+  Truck,
   RotateCcw,
 } from "lucide-react";
 import company from "../../config/companyConfig";
@@ -16,6 +17,7 @@ const iconMap = {
   "party-popper": PartyPopper,
   "flask-conical": FlaskConical,
   "chef-hat": ChefHat,
+  truck: Truck,
 };
 
 export default function ServicesSection() {
@@ -40,7 +42,10 @@ export default function ServicesSection() {
   };
 
   return (
-    <section className="bg-cream px-6 py-20 sm:py-24" aria-labelledby="services-title">
+    <section
+      className="bg-cream px-6 py-20 sm:py-24"
+      aria-labelledby="services-title"
+    >
       <motion.h2
         id="services-title"
         className="mx-auto mb-12 max-w-md text-center font-display text-3xl font-bold text-bordeaux sm:text-4xl"
@@ -91,8 +96,15 @@ export default function ServicesSection() {
                 >
                   {/* Cara frontal */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 rounded-3xl bg-rose-pale/60 px-4 py-6 text-center [backface-visibility:hidden]">
+                    {service.badge && (
+                      <span className="absolute top-3 rounded-full bg-rose-primary px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-softer">
+                        {service.badge}
+                      </span>
+                    )}
                     <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white text-rose-primary shadow-softer">
-                      {Icon && <Icon size={26} strokeWidth={2} aria-hidden="true" />}
+                      {Icon && (
+                        <Icon size={26} strokeWidth={2} aria-hidden="true" />
+                      )}
                     </div>
                     <p className="font-display text-sm font-semibold text-bordeaux sm:text-base">
                       {service.label}
@@ -105,6 +117,11 @@ export default function ServicesSection() {
 
                   {/* Cara posterior */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 rounded-3xl bg-bordeaux px-4 py-6 text-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    {service.badge && (
+                      <span className="absolute top-3 rounded-full bg-white px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-bordeaux shadow-softer">
+                        {service.badge}
+                      </span>
+                    )}
                     <p className="font-display text-sm font-semibold text-white sm:text-base">
                       {service.label}
                     </p>
@@ -114,7 +131,9 @@ export default function ServicesSection() {
                     <p className="mt-1 text-[11px] font-semibold uppercase tracking-wide text-rose-light">
                       Reserva sugerida
                     </p>
-                    <p className="text-xs text-white/90 sm:text-sm">{service.reservation}</p>
+                    <p className="text-xs text-white/90 sm:text-sm">
+                      {service.reservation}
+                    </p>
                   </div>
                 </div>
               </div>

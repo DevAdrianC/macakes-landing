@@ -55,18 +55,24 @@ export default function Footer() {
         © {new Date().getFullYear()} {company.name}
       </p>
 
-      <div className="mt-5 flex items-center justify-center gap-2 opacity-60">
+      <a
+        href={company.developer.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-5 inline-flex items-center justify-center gap-2 rounded-full opacity-60 transition-opacity hover:opacity-90 focus-visible:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/70"
+        aria-label={`${company.developer.credit} ${company.developer.name} — abre yaguaretech.net en una pestaña nueva`}
+      >
         <img
           src={company.developer.logo}
           alt=""
           aria-hidden="true"
           className="h-6 w-6 object-contain sm:h-7 sm:w-7"
         />
-        <p className="font-body text-[11px] text-white/70 sm:text-xs">
+        <span className="font-body text-[11px] text-white/70 sm:text-xs">
           {company.developer.credit}{" "}
           <span className="font-medium">{company.developer.name}</span>
-        </p>
-      </div>
+        </span>
+      </a>
     </footer>
   );
 }
