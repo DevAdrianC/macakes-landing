@@ -49,7 +49,7 @@ export const company = {
 
   // Botón "Descubrí nuestro menú" del Hero — abre el PDF en una pestaña nueva.
   menu: {
-    url: "/menu/macakes-menu.pdf",
+    url: "https://prod.nucleocheck.com/menu/202/1",
     label: "Descubrí nuestro menú",
   },
 
